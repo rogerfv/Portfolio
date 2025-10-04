@@ -309,15 +309,15 @@
                 <div class="project-card card-hover bg-white rounded-lg shadow-lg overflow-hidden" data-category="research">
                     <picture>
                       <source srcset="https://rogerfv.github.io/Portfolio/thesis-cover.webp" type="image/webp">
-                      <img src="https://rogerfv.github.io/Portfolio/thesis-cover.png"
-                          alt="Bachelor’s Thesis — OS Flavour Tagging in LHCb Run 3 (summary plot)"
-                          class="w-full object-cover aspect-[16/9]"  <!-- keeps 16:9 ratio -->
-                          loading="lazy"
-                          decoding="async"
-                          fetchpriority="low"
-                          width="1200" height="675"
-                        >
-                      </picture>
+                      <img
+                        src="https://rogerfv.github.io/Portfolio/thesis-cover.png"
+                        alt="Bachelor’s Thesis — OS Flavour Tagging in LHCb Run 3 (summary plot)"
+                        class="w-full object-cover"
+                        style="aspect-ratio:16/9"
+                        loading="lazy" decoding="async" width="1200" height="675"
+                      >
+                    </picture>
+
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Bachelor’s Thesis: OS Flavour Tagging in LHCb Run 3</h3>
                         <p class="text-gray-600 mb-4">
@@ -565,6 +565,7 @@
     <script src="main.js"></script>
 </body>
 </html>
+
 
 
 
