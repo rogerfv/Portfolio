@@ -107,19 +107,64 @@
         .nav-link:hover::after {
             left: 0;
         }
-    </style>
-    <style>
-      .flag-senyera{
+      /* Simple circle flags (no emoji needed) */
+      .flag-circle { border-radius: 9999px; overflow: hidden; }
+    
+      /* Catalonia (Senyera) */
+      .flag-senyera {
         background:
           repeating-linear-gradient(
             to bottom,
-            #ffcc00 0 8px,   /* yellow */
-            #ffcc00 8px 16px,
+            #ffcd00 0 8px,   /* yellow */
+            #ffcd00 8px 16px,
             #c60b1e 16px 24px, /* red */
             #c60b1e 24px 32px
           );
       }
+    
+      /* Spain (red–yellow–red, 2× yellow band) */
+      .flag-spain {
+        background:
+          linear-gradient(
+            to bottom,
+            #aa151b 0 25%,
+            #f1bf00 25% 75%,
+            #aa151b 75% 100%
+          );
+      }
+    
+      /* England (St George's Cross) */
+      .flag-england {
+        background-color: #ffffff;
+        background-image:
+          linear-gradient(
+            to right,
+            transparent 0 calc(50% - 12%),
+            #ce1126 calc(50% - 12%) calc(50% + 12%),
+            transparent calc(50% + 12%) 100%
+          ),
+          linear-gradient(
+            to bottom,
+            transparent 0 calc(50% - 12%),
+            #ce1126 calc(50% - 12%) calc(50% + 12%),
+            transparent calc(50% + 12%) 100%
+          );
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    
+      /* Germany (black–red–gold) */
+      .flag-germany {
+        background:
+          linear-gradient(
+            to bottom,
+            #000000 0 33.333%,
+            #dd0000 33.333% 66.666%,
+            #ffce00 66.666% 100%
+          );
+      }
     </style>
+
 </head>
 <body>
     <!-- Navigation -->
@@ -507,7 +552,68 @@
                     </div>
                 </div>
             </div>
+
+
+
+            <!-- Language Proficiency -->
+            <div class="mt-12 card-hover bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-2xl font-bold mb-6 text-center">Language Proficiency</h3>
             
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Spanish -->
+                <div class="text-center">
+                  <div class="w-16 h-16 flag-circle flag-spain flex items-center justify-center mx-auto mb-4"
+                       role="img" aria-label="Spanish flag">
+                    <span class="sr-only">Spanish</span>
+                  </div>
+                  <h4 class="font-bold mb-2">Spanish</h4>
+                  <p class="text-sm text-gray-600 mb-3">Native</p>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="skill-bar w-0 h-2 rounded-full" data-width="100%"></div>
+                  </div>
+                </div>
+            
+                <!-- Catalan -->
+                <div class="text-center">
+                  <div class="w-16 h-16 flag-circle flag-senyera flex items-center justify-center mx-auto mb-4"
+                       role="img" aria-label="Catalan (Senyera)">
+                    <span class="sr-only">Catalan</span>
+                  </div>
+                  <h4 class="font-bold mb-2">Catalan</h4>
+                  <p class="text-sm text-gray-600 mb-3">Native</p>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="skill-bar w-0 h-2 rounded-full" data-width="100%"></div>
+                  </div>
+                </div>
+            
+                <!-- English (England) -->
+                <div class="text-center">
+                  <div class="w-16 h-16 flag-circle flag-england flex items-center justify-center mx-auto mb-4"
+                       role="img" aria-label="English (England flag)">
+                    <span class="sr-only">English</span>
+                  </div>
+                  <h4 class="font-bold mb-2">English</h4>
+                  <p class="text-sm text-gray-600 mb-3">Advanced</p>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="skill-bar w-0 h-2 rounded-full" data-width="90%"></div>
+                  </div>
+                </div>
+            
+                <!-- German -->
+                <div class="text-center">
+                  <div class="w-16 h-16 flag-circle flag-germany flex items-center justify-center mx-auto mb-4"
+                       role="img" aria-label="German flag">
+                    <span class="sr-only">German</span>
+                  </div>
+                  <h4 class="font-bold mb-2">German</h4>
+                  <p class="text-sm text-gray-600 mb-3">Intermediate</p>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="skill-bar w-0 h-2 rounded-full" data-width="70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Language Proficiency -->
             <div class="mt-12 card-hover bg-white p-8 rounded-lg shadow-lg">
                 <h3 class="text-2xl font-bold mb-6 text-center">Language Proficiency</h3>
@@ -597,6 +703,7 @@
 </body>
 
 </html>
+
 
 
 
