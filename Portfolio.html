@@ -108,6 +108,18 @@
             left: 0;
         }
     </style>
+    <style>
+      .flag-senyera{
+        background:
+          repeating-linear-gradient(
+            to bottom,
+            #ffcc00 0 8px,   /* yellow */
+            #ffcc00 8px 16px,
+            #c60b1e 16px 24px, /* red */
+            #c60b1e 24px 32px
+          );
+      }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -512,8 +524,9 @@
                     </div>
                     
                     <div class="text-center">
-                      <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-white text-2xl" aria-label="Catalan">🇦🇩</span>
+                      <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 flag-senyera"
+                           role="img" aria-label="Catalan (Senyera)">
+                        <span class="sr-only">Catalan</span>
                       </div>
                       <h4 class="font-bold mb-2">Catalan</h4>
                       <p class="text-sm text-gray-600 mb-3">Native</p>
@@ -584,5 +597,6 @@
 </body>
 
 </html>
+
 
 
