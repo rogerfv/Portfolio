@@ -4,7 +4,7 @@
 <base href="https://5bxrrwu6gc7dm.ok.kimi.link">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roger Feliu - Physics & AI Researcher Portfolio</title>
+    <title>Roger Feliu - Data Science & Physics Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
@@ -13,100 +13,22 @@
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: #1a2332;
-            --secondary: #d4af37;
-            --accent: #4a9b8e;
-            --background: #fafbfc;
-            --text: #2c3e50;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #fafbfc 0%, #f0f2f5 100%);
-            color: var(--text);
-        }
-        
-        .hero-bg {
-            background: linear-gradient(135deg, rgba(26, 35, 50, 0.95) 0%, rgba(74, 155, 142, 0.85) 100%);
-        }
-        
-        .gradient-text {
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-8px) rotateX(5deg);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
-        
-        .skill-bar {
-            background: linear-gradient(90deg, var(--accent) 0%, var(--secondary) 100%);
-            height: 8px;
-            border-radius: 4px;
-            transition: width 1s ease-in-out;
-        }
-        
-        .timeline-item {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        
-        .timeline-item.animate {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .floating {
-            animation: floating 3s ease-in-out infinite;
-        }
-        
-        @keyframes floating {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .particle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: var(--accent);
-            border-radius: 50%;
-            opacity: 0.6;
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
-        }
-        
-        .nav-link {
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: -100%;
-            width: 100%;
-            height: 2px;
-            background: var(--secondary);
-            transition: left 0.3s ease;
-        }
-        
-        .nav-link:hover::after {
-            left: 0;
-        }
+        :root{--primary:#1a2332;--secondary:#d4af37;--accent:#4a9b8e;--background:#fafbfc;--text:#2c3e50}
+        body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,#fafbfc 0%,#f0f2f5 100%);color:var(--text)}
+        .hero-bg{background:linear-gradient(135deg,rgba(26,35,50,.95) 0%,rgba(74,155,142,.85) 100%)}
+        .gradient-text{background:linear-gradient(135deg,var(--secondary) 0%,var(--accent) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .card-hover{transition:all .3s ease}
+        .card-hover:hover{transform:translateY(-8px) rotateX(5deg);box-shadow:0 20px 40px rgba(0,0,0,.1)}
+        .skill-bar{background:linear-gradient(90deg,var(--accent) 0%,var(--secondary) 100%);height:8px;border-radius:4px;transition:width 1s ease-in-out}
+        .timeline-item{opacity:0;transform:translateY(30px)}
+        .timeline-item.animate{opacity:1;transform:translateY(0)}
+        .floating{animation:floating 3s ease-in-out infinite}
+        @keyframes floating{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+        .particle{position:absolute;width:4px;height:4px;background:var(--accent);border-radius:50%;opacity:.6;animation:float 6s ease-in-out infinite}
+        @keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-20px) rotate(180deg)}}
+        .nav-link{position:relative;overflow:hidden}
+        .nav-link::after{content:'';position:absolute;bottom:0;left:-100%;width:100%;height:2px;background:var(--secondary);transition:left .3s ease}
+        .nav-link:hover::after{left:0}
     </style>
 </head>
 <body>
@@ -123,6 +45,7 @@
                         <a href="#about" class="nav-link text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</a>
                         <a href="#experience" class="nav-link text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Experience</a>
                         <a href="#projects" class="nav-link text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Projects</a>
+                        <a href="#education" class="nav-link text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Education</a>
                         <a href="#contact" class="nav-link text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Contact</a>
                     </div>
                 </div>
@@ -133,7 +56,7 @@
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="hero-bg absolute inset-0"></div>
-        
+
         <!-- Floating Particles -->
         <div class="absolute inset-0 overflow-hidden">
             <div class="particle" style="left: 10%; top: 20%; animation-delay: 0s;"></div>
@@ -142,7 +65,7 @@
             <div class="particle" style="left: 30%; top: 80%; animation-delay: 3s;"></div>
             <div class="particle" style="left: 90%; top: 70%; animation-delay: 4s;"></div>
         </div>
-        
+
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="text-center lg:text-left">
@@ -153,10 +76,12 @@
                     <div class="text-xl lg:text-2xl text-gray-200 mb-8">
                         <span id="typed-text"></span>
                     </div>
-                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
-                        Physics & Economics student with international experience in AI research, 
-                        team leadership, and cross-cultural collaboration. Passionate about 
-                        machine learning, data analysis, and scientific innovation.
+                    <p class="text-lg text-gray-300 mb-3 leading-relaxed">
+                        Data Science M.Sc. student at the Free University of Bozen-Bolzano (Italy) and Physics B.Sc. graduate (UAB, Jul 2025).
+                        Experienced in machine learning, simulation, and scientific data analysis.
+                    </p>
+                    <p class="text-sm text-gray-300/90 mb-8">
+                        Python toolset (discreetly flexing): NumPy, pandas, scikit-learn, PyTorch; visualization with matplotlib & seaborn.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                         <a href="#about" class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
@@ -167,7 +92,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="flex justify-center lg:justify-end">
                     <div class="relative">
                         <div class="floating">
@@ -191,15 +116,15 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4 gradient-text" style="font-family: 'Playfair Display', serif;">Technical Expertise</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    A comprehensive skill set spanning physics, artificial intelligence, economics, and leadership
+                    A comprehensive skill set spanning physics, artificial intelligence, data science, and leadership
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                     <div id="skills-chart" class="w-full h-96"></div>
                 </div>
-                
+
                 <div class="space-y-6">
                     <div class="skill-item">
                         <div class="flex justify-between items-center mb-2">
@@ -210,7 +135,7 @@
                             <div class="skill-bar w-0 h-2 rounded-full" data-width="90%"></div>
                         </div>
                     </div>
-                    
+
                     <div class="skill-item">
                         <div class="flex justify-between items-center mb-2">
                             <span class="text-lg font-semibold">Data Analysis & Statistics</span>
@@ -220,7 +145,7 @@
                             <div class="skill-bar w-0 h-2 rounded-full" data-width="85%"></div>
                         </div>
                     </div>
-                    
+
                     <div class="skill-item">
                         <div class="flex justify-between items-center mb-2">
                             <span class="text-lg font-semibold">Team Leadership</span>
@@ -230,7 +155,7 @@
                             <div class="skill-bar w-0 h-2 rounded-full" data-width="95%"></div>
                         </div>
                     </div>
-                    
+
                     <div class="skill-item">
                         <div class="flex justify-between items-center mb-2">
                             <span class="text-lg font-semibold">Research & Innovation</span>
@@ -240,7 +165,7 @@
                             <div class="skill-bar w-0 h-2 rounded-full" data-width="88%"></div>
                         </div>
                     </div>
-                    
+
                     <div class="skill-item">
                         <div class="flex justify-between items-center mb-2">
                             <span class="text-lg font-semibold">Economics & Optimization</span>
@@ -250,6 +175,11 @@
                             <div class="skill-bar w-0 h-2 rounded-full" data-width="75%"></div>
                         </div>
                     </div>
+
+                    <!-- Discreet tech stack line (extra subtle) -->
+                    <p class="text-xs text-gray-500 pt-2">
+                        Tools I use often: NumPy • pandas • scikit-learn • PyTorch • matplotlib • seaborn
+                    </p>
                 </div>
             </div>
         </div>
@@ -261,29 +191,28 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4 gradient-text" style="font-family: 'Playfair Display', serif;">Professional Journey</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    From AI research to team leadership - a journey of continuous learning and growth
+                    From AI research to team leadership — a journey of continuous learning and impact
                 </p>
             </div>
-            
+
             <div class="relative">
-                <!-- Timeline Line -->
                 <div class="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gradient-to-b from-yellow-400 to-teal-500"></div>
-                
-                <!-- Timeline Items -->
+
                 <div class="space-y-12">
+                    <!-- Astro-AI Lab -->
                     <div class="timeline-item flex items-center">
                         <div class="flex-1 pr-8 text-right">
                             <div class="card-hover bg-white p-6 rounded-lg shadow-lg">
                                 <h3 class="text-xl font-bold mb-2">Astro-AI Lab Internship</h3>
-                                <p class="text-gray-600 mb-2">Heidelberg, Germany • 2022 - Present</p>
+                                <p class="text-gray-600 mb-2">Heidelberg, Germany • 03/2025 – 07/2025</p>
                                 <p class="text-gray-700">
-                                    Developing AI-based methods for astronomy using Python, TensorFlow, and PyTorch. 
-                                    Implementing compositional score modeling for inferring galactic parameters.
+                                    Developed simulation-based inference tools in Python to infer galactic parameters; explored meta-tagging with
+                                    gradient-boosted trees and Transformers; contributed to calibration and reweighting pipelines.
                                 </p>
                                 <div class="mt-3 flex flex-wrap gap-2 justify-end">
                                     <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
-                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">TensorFlow</span>
                                     <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">PyTorch</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">scikit-learn</span>
                                     <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">ML</span>
                                 </div>
                             </div>
@@ -291,17 +220,17 @@
                         <div class="w-4 h-4 bg-yellow-400 rounded-full border-4 border-white shadow-lg z-10"></div>
                         <div class="flex-1 pl-8"></div>
                     </div>
-                    
+
+                    <!-- Espuga -->
                     <div class="timeline-item flex items-center">
                         <div class="flex-1 pr-8"></div>
                         <div class="w-4 h-4 bg-teal-500 rounded-full border-4 border-white shadow-lg z-10"></div>
                         <div class="flex-1 pl-8">
                             <div class="card-hover bg-white p-6 rounded-lg shadow-lg">
                                 <h3 class="text-xl font-bold mb-2">Culinary Services Supervisor</h3>
-                                <p class="text-gray-600 mb-2">Grupo Espuga • 2020 - Present</p>
+                                <p class="text-gray-600 mb-2">Grupo Espuga • 03/2020 – 07/2024</p>
                                 <p class="text-gray-700">
-                                    Leading and coordinating a team of five, ensuring efficient workflow and 
-                                    maintaining high standards of food safety and customer service.
+                                    Led and coordinated a team of five, ensuring efficient workflow and high standards in safety and service.
                                 </p>
                                 <div class="mt-3 flex flex-wrap gap-2">
                                     <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Leadership</span>
@@ -311,15 +240,15 @@
                             </div>
                         </div>
                     </div>
-                    
+
+                    <!-- Deleito y Amigos -->
                     <div class="timeline-item flex items-center">
                         <div class="flex-1 pr-8 text-right">
                             <div class="card-hover bg-white p-6 rounded-lg shadow-lg">
                                 <h3 class="text-xl font-bold mb-2">Store Manager</h3>
-                                <p class="text-gray-600 mb-2">Deleito y Amigos • 2024</p>
+                                <p class="text-gray-600 mb-2">Deleito y Amigos • 07/2024 – 10/2024</p>
                                 <p class="text-gray-700">
-                                    Managed restaurant operations including provider coordination, accounting, 
-                                    HR responsibilities, and strategic scheduling.
+                                    Managed operations including provider coordination, accounting, HR responsibilities, and strategic scheduling.
                                 </p>
                                 <div class="mt-3 flex flex-wrap gap-2 justify-end">
                                     <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Management</span>
@@ -331,17 +260,17 @@
                         <div class="w-4 h-4 bg-yellow-400 rounded-full border-4 border-white shadow-lg z-10"></div>
                         <div class="flex-1 pl-8"></div>
                     </div>
-                    
+
+                    <!-- Fit to Fly (kept as-is) -->
                     <div class="timeline-item flex items-center">
                         <div class="flex-1 pr-8"></div>
                         <div class="w-4 h-4 bg-teal-500 rounded-full border-4 border-white shadow-lg z-10"></div>
                         <div class="flex-1 pl-8">
                             <div class="card-hover bg-white p-6 rounded-lg shadow-lg">
                                 <h3 class="text-xl font-bold mb-2">Customer Service Representative</h3>
-                                <p class="text-gray-600 mb-2">Fit to Fly, Schbelta Clinic • 2020 - 2024</p>
+                                <p class="text-gray-600 mb-2">Fit to Fly, Schbelta Clinic • 2020 – 2024</p>
                                 <p class="text-gray-700">
-                                    Managed 200+ daily COVID-19 testing requests, coordinated 15+ nurses, 
-                                    and handled international customer certificates.
+                                    Handled 200+ daily COVID-19 testing requests, coordinated 15+ nurses, and managed international certificates.
                                 </p>
                                 <div class="mt-3 flex flex-wrap gap-2">
                                     <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Customer Service</span>
@@ -351,7 +280,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div><!-- /.space-y-12 -->
             </div>
         </div>
     </section>
@@ -362,11 +291,10 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4 gradient-text" style="font-family: 'Playfair Display', serif;">Featured Projects</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    A selection of my most impactful work in AI research, team leadership, and innovation
+                    A selection of my most impactful work in AI/ML, research, and leadership
                 </p>
             </div>
-            
-            <!-- Project Filter -->
+
             <div class="flex justify-center mb-12">
                 <div class="bg-gray-100 p-1 rounded-full">
                     <button class="filter-btn active px-6 py-2 rounded-full text-sm font-medium transition-all duration-300" data-filter="all">All Projects</button>
@@ -375,15 +303,30 @@
                     <button class="filter-btn px-6 py-2 rounded-full text-sm font-medium transition-all duration-300" data-filter="research">Research</button>
                 </div>
             </div>
-            
-            <!-- Projects Grid -->
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Thesis project card (new) -->
+                <div class="project-card card-hover bg-white rounded-lg shadow-lg overflow-hidden" data-category="research">
+                    <img src="resources/lhcb.jpg" alt="Bachelor’s Thesis" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Bachelor’s Thesis: OS Flavour Tagging in LHCb Run 3</h3>
+                        <p class="text-gray-600 mb-4">
+                            Calibrated and characterized opposite-side taggers trained on Run 2 for Run 3 data using control channels (B<sup>+</sup>→J/ψK<sup>+</sup>) and signal (B<sub>s</sub><sup>0</sup>→J/ψϕ); applied sWeights and kinematic reweighting; prototyped meta-taggers (BDT & Transformer), matching/edging official combiners.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">XGBoost</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-card card-hover bg-white rounded-lg shadow-lg overflow-hidden" data-category="ai">
                     <img src="resources/ai-visualization.jpg" alt="AI Research" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Astro-AI Research</h3>
                         <p class="text-gray-600 mb-4">
-                            Developing compositional score modeling for SBI to infer galactic parameters from stellar chemical abundances.
+                            Compositional score modeling for SBI to infer galactic parameters from stellar chemical abundances.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
@@ -392,13 +335,13 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-card card-hover bg-white rounded-lg shadow-lg overflow-hidden" data-category="leadership">
                     <img src="resources/data-science-workspace.jpg" alt="Team Leadership" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Team Coordination</h3>
                         <p class="text-gray-600 mb-4">
-                            Leading teams of 5-15 people in high-pressure environments, ensuring efficient workflow and excellent service delivery.
+                            Led teams of 5–15 people in high-pressure environments, ensuring efficient workflow and excellent service delivery.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Leadership</span>
@@ -407,7 +350,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-card card-hover bg-white rounded-lg shadow-lg overflow-hidden" data-category="research">
                     <img src="resources/lab-equipment.jpg" alt="Physics Research" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -427,16 +370,37 @@
     </section>
 
     <!-- Education Section -->
-    <section class="py-20 bg-gray-50">
+    <section id="education" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4 gradient-text" style="font-family: 'Playfair Display', serif;">Education & Achievements</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Academic excellence across multiple disciplines with international experience
+                    Academic excellence with international experience
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- New: Uni of Bolzano -->
+                <div class="card-hover bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white text-xl">📈</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Free University of Bozen-Bolzano</h3>
+                            <p class="text-gray-600">M.Sc. in Data Science</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Coursework bridging statistics, ML, and data engineering. Applying ML to real-world datasets with a strong Python stack.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">Bolzano, Italy</span>
+                        <span class="text-sm text-gray-600">2025 – Present</span>
+                    </div>
+                </div>
+
+                <!-- UAB Physics -->
                 <div class="card-hover bg-white p-8 rounded-lg shadow-lg">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
@@ -444,16 +408,15 @@
                         </div>
                         <div>
                             <h3 class="text-xl font-bold">Universitat Autònoma de Barcelona</h3>
-                            <p class="text-gray-600">Bachelor's Degree in Physics</p>
+                            <p class="text-gray-600">B.Sc. in Physics</p>
                         </div>
                     </div>
                     <p class="text-gray-700 mb-4">
-                        Fourth year spent in Germany as Erasmus student, taking master's courses in 
-                        Machine Learning, GPU Supercomputing and Simulation Methods.
+                        Erasmus year in Germany taking master’s courses in Machine Learning, GPU Supercomputing and Simulation Methods. Bachelor’s Thesis done with the LHCb group in Heidelberg.
                     </p>
                     <div class="flex justify-between items-center">
                         <span class="text-sm text-gray-600">Grade: 7.93/10</span>
-                        <span class="text-sm text-gray-600">2021 - Present</span>
+                        <span class="text-sm text-gray-600">2021 – 07/2025</span>
                     </div>
                     <div class="mt-4">
                         <h4 class="font-semibold mb-2">Honors & Achievements:</h4>
@@ -465,38 +428,9 @@
                         </ul>
                     </div>
                 </div>
-                
-                <div class="card-hover bg-white p-8 rounded-lg shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4">
-                            <span class="text-white text-xl">📊</span>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Universitat Oberta de Catalunya</h3>
-                            <p class="text-gray-600">Bachelor's Degree in Economics</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 mb-4">
-                        Third year student with focus on optimization, microeconomics, and statistics. 
-                        Building strong foundation in economic theory and quantitative methods.
-                    </p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm text-gray-600">Grade: 7.9/10</span>
-                        <span class="text-sm text-gray-600">2021 - Present</span>
-                    </div>
-                    <div class="mt-4">
-                        <h4 class="font-semibold mb-2">Relevant Coursework:</h4>
-                        <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• Optimization</li>
-                            <li>• Microeconomics</li>
-                            <li>• Statistics</li>
-                            <li>• Economic Theory</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-            
-            <!-- Language Proficiency -->
+
+            <!-- Language Proficiency (unchanged) -->
             <div class="mt-12 card-hover bg-white p-8 rounded-lg shadow-lg">
                 <h3 class="text-2xl font-bold mb-6 text-center">Language Proficiency</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -510,7 +444,7 @@
                             <div class="skill-bar w-0 h-2 rounded-full" data-width="100%"></div>
                         </div>
                     </div>
-                    
+
                     <div class="text-center">
                         <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
                             <span class="text-white text-2xl">🇨🇦</span>
@@ -521,7 +455,7 @@
                             <div class="skill-bar w-0 h-2 rounded-full" data-width="100%"></div>
                         </div>
                     </div>
-                    
+
                     <div class="text-center">
                         <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-white rounded-full flex items-center justify-center mx-auto mb-4">
                             <span class="text-gray-800 text-2xl">🇬🇧</span>
@@ -532,7 +466,7 @@
                             <div class="skill-bar w-0 h-2 rounded-full" data-width="90%"></div>
                         </div>
                     </div>
-                    
+
                     <div class="text-center">
                         <div class="w-16 h-16 bg-gradient-to-r from-black to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
                             <span class="text-white text-2xl">🇩🇪</span>
@@ -553,8 +487,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">Let's Collaborate</h2>
             <p class="text-xl mb-8 max-w-3xl mx-auto text-gray-300">
-                Interested in AI research, data analysis, or leadership opportunities? 
-                I'm always open to discussing new projects and collaborations.
+                Interested in AI research, data analysis, or collaborations? I’m always open to new projects.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="mailto:rogerfv943@gmail.com" class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
@@ -575,7 +508,7 @@
     <footer class="bg-gray-900 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-gray-400">
-                © 2024 Roger Feliu. All rights reserved. • Physics & AI Researcher • Barcelona, Spain
+                © 2025 Roger Feliu. All rights reserved. • Data Science & Physics • Barcelona, Spain
             </p>
         </div>
     </footer>
